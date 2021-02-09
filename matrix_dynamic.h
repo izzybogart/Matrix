@@ -14,9 +14,9 @@ typedef struct {
 } matrix;
 
 /* function prototypes */
-matrix create_empty_dy(int rdim, int cdim);
-matrix create_initval_dy(int rdim, int cdim, T val);
-matrix create_initvals_dy(int rdim, int cdim, T* initval);
+matrix create_empty(int rdim, int cdim);
+matrix create_initval(int rdim, int cdim, T val);
+matrix create_initvals(int rdim, int cdim, T* initval);
 void destroy(matrix);
 void matrix_print(matrix);
 T retrieve(int row, int col, matrix m);  /* retrieve an element from m */
