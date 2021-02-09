@@ -12,7 +12,6 @@ void transpose(matrix a, matrix b) {
 }
 
 int main(){
-    srand(time(NULL));
     int row = 2;
     int col = 5;
 
@@ -20,12 +19,18 @@ int main(){
 
     static T data[] = {2,1,8,2,4,5,7,2,10};
     a_stat = create_initvals_stat(2,5,data);
-    a_dy = create_initvals_dy(2,5,data);
+    a_dy = create_initvals(2,5,data);
 
     b_stat = create_empty_stat(5,2);
-    b_dy = create_empty_dy(5,2);
+    b_dy = create_empty(5,2);
 
-    transpose(a, b);
+    transpose(a_stat, b_stat);
+    transpose(a_dy, b_dy);
 
-    martix_print(b);
+    printf("Static Transpose");
+    matrix_print(b_stat);
+    printf("\n");
+    printf("Dynamic Transpose");
+    matrix_print(b_dy);
+    
 }
