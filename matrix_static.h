@@ -1,10 +1,10 @@
 /* File: matrix_static.h */
-#ifndef MATRIXh
-#define MATRIXh
+#ifndef __Matrix_Static_H__
+#define __Matrix_Static_H__
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#define FORMAT "%8.3lf"
+#define FORMAT "%8.3i"
 #define MAX_ROW 10
 #define MAX_COL 10
 
