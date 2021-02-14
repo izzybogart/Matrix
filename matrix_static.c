@@ -1,7 +1,7 @@
 /* File: matrix_static.c */
 #include "matrix_static.h"
 
-matrix create_empty_stat(int rdim, int cdim)
+matrix create_empty(int rdim, int cdim)
 {
   int i;
   matrix result;
@@ -11,7 +11,7 @@ matrix create_empty_stat(int rdim, int cdim)
   return result;
 }
 
-matrix create_initval_stat(int rdim, int cdim, T val)
+matrix create_initval(int rdim, int cdim, T val)
 {
   int i,j;
   matrix result;
@@ -25,7 +25,7 @@ matrix create_initval_stat(int rdim, int cdim, T val)
   return result;
 }
 
-matrix create_initvals_stat(int rdim, int cdim, T* initval)
+matrix create_initvals (int rdim, int cdim, T* initval)
 {
   int i,j;
   matrix result;
