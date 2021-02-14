@@ -138,3 +138,6 @@ void transpose(matrix a, matrix b) {
     for(row = 0; row < a.col_dim; row++){
         for(col = 0; col < b.col_dim; col++){
                 b.element[row][col]= a.element[col][row];
+        }
+    }
+}
